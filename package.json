@@ -1,0 +1,30 @@
+{
+	"name": "confirmation-animated-dialog",
+	"version": "1.0.3",
+	"scripts": {
+		"serve": "http-server --push-state -o -c-1 -p 3021 -a localhost",
+		"s": "npm run serve"
+	},
+	"devDependencies": {
+		"http-server": "^0.11.1",
+		"prettier": "^1.18.2"
+	},
+	"description": "To complete",
+	"main": "lib/index.js",
+	"directories": {
+		"lib": "lib",
+		
+	},
+	"dependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "to complete"
+	},
+	"keywords": [ "dialog", "modal", "window", "yes/no" "confirmation" ],
+	"author": "Anastazja Galuza",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/anastazjagaluza/tree-view/issues"
+	},
+	"homepage": "https://github.com/anastazjagaluza/tree-view#readme"
+}

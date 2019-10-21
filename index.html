@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding-top: 10rem;
+}
+button {
+    margin-top: 4rem;
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+</style>
+<body>
+   <img src="assets/cat.png">
+        <button>Hungry cat has a question</button>
+  
+   
+   <script type="module">
+    import { showModal } from './lib/index.js';
+   
+    document.querySelector("button").addEventListener("click", function(){
+        let openModal = showModal("I am hungry", "Will you feed me?");
+    });
+    window.addEventListener("answer", e =>{
+        if(e.detail.text()){
+            document.querySelector("img").src = "assets/cat1.png"
+            document.querySelector("button").textContent = "The cat is very happy!"
+        }else{
+            document.querySelector("img").src = "assets/cat0.png"
+            document.querySelector("button").textContent = "Try again!"
+        }
+        e.detail.focused().focus();
+    }
+        );
+   </script> 
+ 
+</body>
+</html>
