@@ -22,7 +22,7 @@
 * [➤ License](#-license)
 
 ## ➤ Description
-This is a simple and user-friendly dialog window, created according to the ARIA acceddibility standards. The dialog has a backdrop shadow and can handle a yes/no question. It passes the response further as a boolean, so the developer can display next part of the website depending on whether the user pressed "yes" or "no", or just closed the window, which is also interpreted as "no".
+This is a simple and user-friendly dialog window, created according to the ARIA accessibility standards. The dialog has a backdrop shadow and can handle a yes/no question. It passes the response further as a boolean, so the developer can display next part of the website depending on whether the user pressed "yes" or "no", or just closed the window, which is also interpreted as "no".
 
 The dialog can be customized to displaying only one button, f.ex. "Accept" or "Next". In that case, pressing that button give the response of "true", and closing the window is interpreted as "false".
 
